@@ -23,14 +23,14 @@ export const routes: Routes = [
         component: EmployeeComponent,
       },
       {
-        path: 'add-customer',
-        component: AddCustomerComponent,
+        path: 'add-employee',
+        component: ManageEmployeesComponent,
       },
     ],
   },
   {
     path: 'dashboard',
-    component: DashPageComponent,
+    component: DashboardComponent,
     children: [
       {
         path: '',
