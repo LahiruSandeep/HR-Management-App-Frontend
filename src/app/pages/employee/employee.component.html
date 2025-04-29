@@ -1,0 +1,13 @@
+<div class="album py-2 bg-body-tertiary">
+    <div class="container">
+        <div class=" py-0 border-top-1px mb-5 ">
+            <button [routerLink]="['/manage-employees']" type="button" class="btn btn-primary right">Manage Employees</button>
+        </div>
+    
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div *ngFor="let product of employeeInfo" class="col">
+                <app-employee-card [employeeInfo]="employee" ></app-employee-card>
+            </div>
+        </div>
+    </div>
+</div>
